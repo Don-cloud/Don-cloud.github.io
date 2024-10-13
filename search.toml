@@ -1,0 +1,13 @@
+[input]
+html_selector = "main"
+base_directory = "/home/don/repos/projects/blogoutput"
+
+[[input.files]]
+path = "2024/10/04/sidecar-filesystem-notifications/index.html"
+url = "/2024/10/04/sidecar-filesystem-notifications/"
+title = "Boosting Kubernetes Filesystem Workflows: Filesystem Workflows with Sidecars"
+
+[[input.files]]
+path = "2024/10/03/kubernetes-filesystem-notifications/index.html"
+url = "/2024/10/03/kubernetes-filesystem-notifications/"
+title = "Boosting Kubernetes Filesystem Workflows: Real-Time File Monitoring and Event Handling"
