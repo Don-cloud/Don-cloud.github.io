@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/home/don/repos/projects/blogoutput"
 
 [[input.files]]
+path = "2024/10/20/books-that-inspire/index.html"
+url = "/2024/10/20/books-that-inspire/"
+title = "Tech Wisdom: Books & Resources That Inspire and Elevate Our Tech Journey"
+
+[[input.files]]
 path = "2024/10/04/sidecar-filesystem-notifications/index.html"
 url = "/2024/10/04/sidecar-filesystem-notifications/"
 title = "Kubernetes Filesystem Workflows with Sidecars"
