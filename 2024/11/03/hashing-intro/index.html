@@ -14,19 +14,19 @@
         <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary">
 
-<meta name="keywords" content="books, leadership, Inspiration, " />
+<meta name="keywords" content="encryption, cybersecurity, Cloud Technologies, " />
 
-<meta property="og:title" content="Tech Wisdom: Books &amp; Resources That Inspire and Elevate Our Tech Journey "/>
-<meta property="og:url" content="https://Don-cloud.github.io/2024/10/20/books-that-inspire/" />
-<meta property="og:description" content="" />
+<meta property="og:title" content="Power of Hashing in modern secure communications "/>
+<meta property="og:url" content="https://Don-cloud.github.io/2024/11/03/hashing-intro/" />
+<meta property="og:description" content="Role of Hashing Introduction" />
 <meta property="og:site_name" content="The Digital Sage" />
 <meta property="og:article:author" content="Sajal Sachdev" />
-<meta property="og:article:published_time" content="2024-10-20T10:00:00+02:00" />
-<meta property="og:article:modified_time" content="2024-10-20T10:30:00+02:00" />
-<meta name="twitter:title" content="Tech Wisdom: Books &amp; Resources That Inspire and Elevate Our Tech Journey ">
-<meta name="twitter:description" content="">
+<meta property="og:article:published_time" content="2024-11-03T10:42:00+01:00" />
+<meta property="og:article:modified_time" content="2024-11-03T10:42:00+01:00" />
+<meta name="twitter:title" content="Power of Hashing in modern secure communications ">
+<meta name="twitter:description" content="Role of Hashing Introduction">
 
-        <title>Tech Wisdom: Books &amp; Resources That Inspire and Elevate Our Tech Journey  · The Digital Sage
+        <title>Power of Hashing in modern secure communications  · The Digital Sage
 </title>
         <link href="https://Don-cloud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Digital Sage - Full Atom Feed" />
 
@@ -72,8 +72,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://Don-cloud.github.io/2024/10/20/books-that-inspire/">
-                Tech Wisdom: Books & Resources That Inspire and Elevate Our Tech Journey
+            <a href="https://Don-cloud.github.io/2024/11/03/hashing-intro/">
+                Power of Hashing in modern secure communications
             </a>
         </h1>
     </header>
@@ -85,8 +85,7 @@
         <h4>Contents</h4>
         <div class="toc">
 <ul>
-<li><a href="#reading-list">Reading List</a></li>
-<li><a href="#helpful-tools">Helpful Tools</a></li>
+<li><a href="#what-is-hashing">What is Hashing?</a></li>
 </ul>
 </div>
         </nav>
@@ -95,28 +94,29 @@
         <div class="span8 article-content">
             
             
-<h2 id="reading-list">Reading List<a class="headerlink" href="#reading-list" title="Permanent link">¶</a></h2>
-<p>In this blog, I share a carefully curated list of books, tech tools and other resources that have significantly impacted my growth as a technology professional. Whether you’re looking to enhance your technical skills, explore cloud computing, or stay upto-date with cutting-edge tools, these recommendations offer both practical knowledge and inspiration. Ideal for anyone aiming to deepen their expertise, boost productivity, and ignite their passion for innovation</p>
+<p>In today’s world, hashing plays a fundamental role in securing our digital interactions. From protecting passwords to verifying data integrity, hashing is at the core of modern encrypted communications. In this article, we’ll dive into the essentials of hashing, explore its types, and look at its many real-world applications.</p>
+<h2 id="what-is-hashing">What is Hashing?<a class="headerlink" href="#what-is-hashing" title="Permanent link">¶</a></h2>
+<p>Hashing is a process that transforms input data (often called plaintext) of any length into a fixed-length string of characters. This transformation produces a “hash,” a unique fingerprint of the original data, typically represented by a string of letters and numbers.</p>
+<p>The distinct feature of hashing is its <strong>irreversibility</strong>. Once data is hashed, you cannot easily revert it to its original form. This is because hashing is a <strong>one-way function</strong>. Although it’s technically possible to guess the input by brute force or through algorithmic flaws (in weaker hashing algorithms), good hashing algorithms are designed to make such efforts practically infeasible.</p>
+<p>In hashing:</p>
 <ul>
-<li><a href="https://www.amazon.com/The-Phoenix-Project-audiobook/dp/B00VATFAMI/ref=sr_1_1?crid=S1WAAD39DLOD&amp;dib=eyJ2IjoiMSJ9.s5SlN5Um7zFOhM9Hvh5LNBineltMqLDa1twvIKi91R9msLRfLFfKn1orwyBhEZzXPQsyr26qr7hWGyv_ece1-lIzwpqBA3rr9uODkMCSiO82hEafuX_E3clqUHTxrDJxPB-epA2U9oHCZNIk0MeXNs9C9rTkwogyCpcajw8zIeZtjrNLMy5IYEjSX6B0UhkSlnk2CP-fIphWAB0dgPZ6ddjSc9G7Dn2umoPuLZbjLf8.e_BInhmbb0ZDFGvNtFp0kerRzLU50iym4TJUcQ0iFF4&amp;dib_tag=se&amp;keywords=the+phoenix+project&amp;qid=1729433395&amp;sprefix=the+phoenix+project%2Caps%2C101&amp;sr=8-1">The Phoenix Project</a>: By Gene Kim, Kevin Behr and George Spafford. A Novel about IT DevOps transformation of an organization</li>
-<li><a href="https://www.amazon.com/Kubernetes-Action-Marko-Luksa/dp/1617293725/ref=sr_1_1?crid=37TTXPZJ5H3W8&amp;dib=eyJ2IjoiMSJ9.vnECAzmPSfY22czsj8JX1z9iDRcNsV2Ct20-t4l3sBVG3UEMxe28a6kNStY8lu__gFh2X0BDonFuXQuaq_0vozj0aWjkhEhm5tm6sSgDrfdDdtiTNrOqUaDUfPALEG7kUNxfwQ3zMC9KxFxuCpQEsU2ZYtdOiTDn27xE-DIn4yWeITSIIOgtHbTO2xCt1yK3-mcU5o34Vnqz0k25xcHqVIyGKesa91PzpTNi1EvpVm4._J7nAS5odtYf8MmszotA0odZFtQR9yjsajyDN4nereo&amp;dib_tag=se&amp;keywords=kubernetes+in+action&amp;qid=1729434223&amp;sprefix=kubernetes%2Caps%2C93&amp;sr=8-1">Kubernetes in Action</a> by Marko Luska. a comprehensive guide to effectively developing and running applications in a Kubernetes environment</li>
-<li><a href="https://www.amazon.com/Five-Dysfunctions-Team-Leadership-Fable/dp/0787960756/ref=sr_1_1?crid=2CR4BRM0H40K4&amp;dib=eyJ2IjoiMSJ9.w-1pug-sqJjq393urfKgKC35BgDEWW2rozLknu7ArK0iaOy7GppD8vSv-BhCHJdp_PFXy1RP_RSq8SMr7gethXzLia0Bu_0F6sqx6LsShjCMOpOKrC08ZV20tj0-wZMk5Wt_sMFR5XB4GOr44cc0bx8CbRQR-3yhvrXo8oVeOz8hD8FzPC6UqFh1J2RwhfEelIMwK5Jd6knNl-jC6p0FflMCYsQd6R3aGdtLYERpHQc.3XmzVTSHzlgtE4EPutGpkiv6y0fTqojS5Vpzu_QIqcE&amp;dib_tag=se&amp;keywords=the+five+dysfunctions+of+a+team&amp;qid=1729439562&amp;s=books&amp;sprefix=the+five+d%2Cstripbooks%2C94&amp;sr=1-1">The Five Dysfunctions of a Team</a> By Patrick M. Lencioni A leadership fable of how to build effective teams.</li>
-<li><a href="https://www.amazon.com/Let-Us-Authentic-programming-language/dp/9355512767/?_encoding=UTF8&amp;pd_rd_w=rcpkq&amp;content-id=amzn1.sym.eb12963a-1824-4e85-bbd8-e45801545a5c%3Aamzn1.symc.ee4c414f-039b-458d-a009-4479557ca47b&amp;pf_rd_p=eb12963a-1824-4e85-bbd8-e45801545a5c&amp;pf_rd_r=J3KZ9FX671TRAHRZWDEQ&amp;pd_rd_wg=Ewr2Y&amp;pd_rd_r=c531da9b-8585-48a8-baa2-8f1753c2f1b8&amp;ref_=pd_hp_d_btf_ci_mcx_mr_hp_d">Let Us C</a> By Yashavant kanetkar. An Authentic guide to C programming language</li>
-<li><a href="https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287/ref=sr_1_1?crid=MUUGMNCMMWKJ&amp;dib=eyJ2IjoiMSJ9.gUFZ75rD3amopUP-TOZIoFoZPmYHxIqFHdpf8pr1J9xJN5nFMHkqGPqxyJkXU2m21JZNLQHLZrgsxzk9GPKtvaFgu97Vzh9Egbokwy79iHrW-5yx-wWiaLKS4ZJ6JG5O8hYZYvuB-4I7LkxhcJUU1md-lexkeY58lqqLBaiEaWEJeYFaq8O1UdWFe-v1_e8_WP0euaTBf4FCHEPFsi4uuWnJG3KS_YOSemQebevpQCo.O0pLKKVKJJvYgrzNT_ynUfSWf7RKAo5B5h7xlhVY5dY&amp;dib_tag=se&amp;keywords=made+to+stick&amp;qid=1729438445&amp;s=books&amp;sprefix=made+to+st%2Cstripbooks%2C119&amp;sr=1-1">Made to Stick</a> by Chip Heath, Dan Heath. Why Some Ideas Survive and Others Die </li>
+<li>For a given input, hashing will <strong>always produce the same output</strong> (deterministic).</li>
+<li>The hashing process is designed to be computationally <strong>efficient</strong>, producing results quickly even with large inputs.</li>
 </ul>
-<h2 id="helpful-tools">Helpful Tools<a class="headerlink" href="#helpful-tools" title="Permanent link">¶</a></h2>
-<ul>
-<li><a href="https://azurespeedtest.azurewebsites.net/">Azure Speed Test</a> Tool to provide measurable azure regions latency information from your location </li>
-</ul>
+<p>Hashing is therefore ideal for many security applications, particularly because of this unique combination of <strong>irreversibility</strong>, <strong>speed</strong>, and <strong>determinism</strong>.</p>
+<p>For example, to hash a password like <code>imaginary-password</code> with the SHA-256 hashing algorithm, you can use the following command in Unix-based systems:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">"imaginary-password"</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>shasum<span class="w"> </span>-a<span class="w"> </span><span class="m">256</span>
+</code></pre></div>
+<p>This command produces a 256-bit (32-byte) hash value, which is the “fingerprint” of your input text.</p>
 
 
              
  
                 <p id="post-share-links">
     Like this post? Share on!
-      <a href="https://twitter.com/intent/tweet?text=Tech%20Wisdom%3A%20Books%20%26%20Resources%20That%20Inspire%20and%20Elevate%20Our%20Tech%20Journey&url=https%3A//Don-cloud.github.io/2024/10/20/books-that-inspire/&hashtags=books,leadership" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//Don-cloud.github.io/2024/10/20/books-that-inspire/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Tech%20Wisdom%3A%20Books%20%26%20Resources%20That%20Inspire%20and%20Elevate%20Our%20Tech%20Journey&amp;body=https%3A//Don-cloud.github.io/2024/10/20/books-that-inspire/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+      <a href="https://twitter.com/intent/tweet?text=Power%20of%20Hashing%20in%20modern%20secure%20communications&url=https%3A//Don-cloud.github.io/2024/11/03/hashing-intro/&hashtags=encryption,cybersecurity" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//Don-cloud.github.io/2024/11/03/hashing-intro/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Power%20of%20Hashing%20in%20modern%20secure%20communications&amp;body=https%3A//Don-cloud.github.io/2024/11/03/hashing-intro/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
 
             
             
@@ -131,8 +131,7 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://Don-cloud.github.io/2024/10/04/sidecar-filesystem-notifications/" title="Previous: Kubernetes Filesystem Workflows with Sidecars">Kubernetes Filesystem Workflows with Sidecars</a></li>
-                <li class="next-article"><a href="https://Don-cloud.github.io/2024/11/03/hashing-intro/" title="Next: Power of Hashing in modern secure communications">Power of Hashing in modern secure communications</a> »</li>
+                <li class="previous-article">« <a href="https://Don-cloud.github.io/2024/10/20/books-that-inspire/" title="Previous: Tech Wisdom: Books &amp; Resources That Inspire and Elevate Our Tech Journey">Tech Wisdom: Books & Resources That Inspire and Elevate Our Tech Journey</a></li>
             </ul>
             </nav>
             </aside>
@@ -140,16 +139,22 @@
         </main>
         <section id="article-sidebar" class="span2">
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2024-10-20T10:00:00+02:00">Sun 20 October 2024</time>
+            <time itemprop="dateCreated" datetime="2024-11-03T10:42:00+01:00">Sun 03 November 2024</time>
 
+        <h4>Hashing Series</h4>
+    <ul class="multi-parts-list">
+            <li  class="active-part">
+            Part 1: Power of Hashing in modern secure communications
+            </li>
+    </ul>
             <h4>Category</h4>
-            <a class="category-link" href="https://Don-cloud.github.io/categories.html#inspiration-ref">Inspiration</a>
+            <a class="category-link" href="https://Don-cloud.github.io/categories.html#cloud-technologies-ref">Cloud Technologies</a>
             <h4>Tags</h4>
             <ul class="list-of-tags tags-in-article">
-                <li><a href="https://Don-cloud.github.io/tags.html#books-ref">books
+                <li><a href="https://Don-cloud.github.io/tags.html#cybersecurity-ref">cybersecurity
                     <span class="superscript">1</span>
 </a></li>
-                <li><a href="https://Don-cloud.github.io/tags.html#leadership-ref">leadership
+                <li><a href="https://Don-cloud.github.io/tags.html#encryption-ref">encryption
                     <span class="superscript">1</span>
 </a></li>
             </ul>
