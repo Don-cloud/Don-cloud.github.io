@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/all.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2024-11-03T10:42:00+01:00</updated><entry><title>Power of Hashing in modern secure communications</title><link href="https://Don-cloud.github.io/2024/11/03/hashing-intro/" rel="alternate"></link><published>2024-11-03T10:42:00+01:00</published><updated>2024-11-03T10:42:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-03:/2024/11/03/hashing-intro/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
-&lt;p&gt;In today’s world, hashing plays a fundamental role in securing our digital interactions. From protecting passwords to verifying data integrity, hashing is at the core of modern encrypted communications. In this article, we’ll dive into the essentials of hashing, explore its types, and look at its many real-world applications.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/all.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2024-11-06T18:40:00+01:00</updated><entry><title>Types of Hashing Algorithms</title><link href="https://Don-cloud.github.io/2024/11/06/hashing-types/" rel="alternate"></link><published>2024-11-06T18:40:00+01:00</published><updated>2024-11-06T18:40:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-06:/2024/11/06/hashing-types/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Hashing algorithms vary in complexity, security, and length of output. Here are some of the most widely used types:&lt;/p&gt;
+&lt;h6 id="md5-message-digest-algorithm-5"&gt;MD5 (Message Digest Algorithm 5)&lt;a class="headerlink" href="#md5-message-digest-algorithm-5" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Produces a 128-bit hash.&lt;/li&gt;
+&lt;li&gt;It’s fast but vulnerable to collisions, meaning two different inputs can produce the same hash. Due to these vulnerabilities, MD5 is generally not recommended for secure applications today.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id="sha-1-secure-hash-algorithm-1"&gt;SHA-1 (Secure Hash Algorithm 1)&lt;a class="headerlink" href="#sha-1-secure-hash-algorithm-1" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;Produces a 160-bit hash.&lt;/li&gt;
+&lt;li&gt;SHA-1 was widely used in the past but is now considered insecure for most applications due to susceptibility to collision attacks.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id="sha-2-secure-hash-algorithm-2"&gt;SHA-2 (Secure Hash Algorithm 2)&lt;a class="headerlink" href="#sha-2-secure-hash-algorithm-2" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;A family of hash functions that includes SHA-256 (producing a 256-bit hash) and SHA-512 (producing a 512-bit hash).&lt;/li&gt;
+&lt;li&gt;SHA-256 is a highly secure and widely used hashing algorithm, particularly in cryptocurrency and digital certificates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6 id="sha-3-secure-hash-algorithm-3"&gt;SHA-3 (Secure Hash Algorithm 3)&lt;a class="headerlink" href="#sha-3-secure-hash-algorithm-3" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;A newer standard designed to offer security even against advanced attacks. It’s computationally intensive but highly secure, often used in cryptographic applications that require maximum security.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Each of these algorithms are designed with specific trade-offs in mind between security, performance, and output size.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="encryption"></category><category term="cybersecurity"></category></entry><entry><title>Power of Hashing in modern secure communications</title><link href="https://Don-cloud.github.io/2024/11/03/hashing-intro/" rel="alternate"></link><published>2024-11-03T10:42:00+01:00</published><updated>2024-11-03T10:42:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-03:/2024/11/03/hashing-intro/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;In today’s world, hashing plays a fundamental role in securing our digital interactions. From protecting passwords to verifying data integrity, hashing is at the core of modern encrypted communications. In this article series, we’ll dive into the essentials of hashing, explore its types, and look at its many real-world applications.&lt;/p&gt;
 &lt;h2 id="what-is-hashing"&gt;What is Hashing?&lt;a class="headerlink" href="#what-is-hashing" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Hashing is a process that transforms input data (often called plaintext) of any length into a fixed-length string of characters. This transformation produces a “hash,” a unique fingerprint of the original data, typically represented by a string of letters and numbers.&lt;/p&gt;
 &lt;p&gt;The distinct feature of hashing is its &lt;strong&gt;irreversibility&lt;/strong&gt;. Once data is hashed, you cannot easily revert it to its original form. This is because hashing is a &lt;strong&gt;one-way function&lt;/strong&gt;. Although it’s technically possible to guess the input by brute force or through algorithmic flaws (in weaker hashing algorithms), good hashing algorithms are designed to make such efforts practically infeasible.&lt;/p&gt;

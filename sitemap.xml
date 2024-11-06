@@ -5,51 +5,58 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://Don-cloud.github.io/404.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/tags.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/categories.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/authors.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/archives.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/search.html</loc>
-<lastmod>2024-11-04T10:54:24-00:00</lastmod>
+<lastmod>2024-11-06T10:22:27-00:00</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://Don-cloud.github.io/2024/11/06/hashing-types/</loc>
+<lastmod>2024-11-06T18:40:00+01:00</lastmod>
+<changefreq>weekly</changefreq>
+<priority>0.6</priority>
 </url>
 
 <url>
@@ -82,7 +89,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://Don-cloud.github.io/category/cloud-technologies.html</loc>
-<lastmod>2024-11-03T10:42:00+00:50</lastmod>
+<lastmod>2024-11-06T18:40:00+00:50</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -96,14 +103,14 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://Don-cloud.github.io/tag/encryption.html</loc>
-<lastmod>2024-11-03T10:42:00+00:50</lastmod>
+<lastmod>2024-11-06T18:40:00+00:50</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://Don-cloud.github.io/tag/cybersecurity.html</loc>
-<lastmod>2024-11-03T10:42:00+00:50</lastmod>
+<lastmod>2024-11-06T18:40:00+00:50</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -138,7 +145,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://Don-cloud.github.io/author/sajal-sachdev.html</loc>
-<lastmod>2024-11-03T10:42:00+00:50</lastmod>
+<lastmod>2024-11-06T18:40:00+00:50</lastmod>
 <changefreq>weekly</changefreq>
 <priority>0.5</priority>
 </url>
