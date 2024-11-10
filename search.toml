@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/home/don/repos/projects/blogoutput"
 
 [[input.files]]
+path = "2024/11/10/hashing-usecases/index.html"
+url = "/2024/11/10/hashing-usecases/"
+title = "Use cases"
+
+[[input.files]]
 path = "2024/11/06/hashing-types/index.html"
 url = "/2024/11/06/hashing-types/"
 title = "Types of Hashing Algorithms"
