@@ -16,17 +16,17 @@
 
 <meta name="keywords" content="encryption, cybersecurity, Cloud Technologies, " />
 
-<meta property="og:title" content="Types of Hashing Algorithms "/>
-<meta property="og:url" content="https://Don-cloud.github.io/2024/11/06/hashing-types/" />
+<meta property="og:title" content="Use cases "/>
+<meta property="og:url" content="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" />
 <meta property="og:description" content="Role of Hashing Introduction" />
 <meta property="og:site_name" content="The Digital Sage" />
 <meta property="og:article:author" content="Sajal Sachdev" />
-<meta property="og:article:published_time" content="2024-11-06T18:40:00+01:00" />
-<meta property="og:article:modified_time" content="2024-11-06T18:40:00+01:00" />
-<meta name="twitter:title" content="Types of Hashing Algorithms ">
+<meta property="og:article:published_time" content="2024-11-10T10:00:00+01:00" />
+<meta property="og:article:modified_time" content="2024-11-10T10:00:00+01:00" />
+<meta name="twitter:title" content="Use cases ">
 <meta name="twitter:description" content="Role of Hashing Introduction">
 
-        <title>Types of Hashing Algorithms  · The Digital Sage
+        <title>Use cases  · The Digital Sage
 </title>
         <link href="https://Don-cloud.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="The Digital Sage - Full Atom Feed" />
 
@@ -72,8 +72,8 @@
 <div class="row-fluid">
     <header class="page-header span10 offset2">
         <h1>
-            <a href="https://Don-cloud.github.io/2024/11/06/hashing-types/">
-                Types of Hashing Algorithms
+            <a href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/">
+                Use cases
             </a>
         </h1>
     </header>
@@ -85,10 +85,14 @@
         <h4>Contents</h4>
         <div class="toc">
 <ul>
-<li><a href="#md5-message-digest-algorithm-5">MD5 (Message Digest Algorithm 5)</a></li>
-<li><a href="#sha-1-secure-hash-algorithm-1">SHA-1 (Secure Hash Algorithm 1)</a></li>
-<li><a href="#sha-2-secure-hash-algorithm-2">SHA-2 (Secure Hash Algorithm 2)</a></li>
-<li><a href="#sha-3-secure-hash-algorithm-3">SHA-3 (Secure Hash Algorithm 3)</a></li>
+<li><a href="#1-password-storage-and-authentication">1. Password Storage and Authentication</a></li>
+<li><a href="#2-data-integrity-verification">2. Data Integrity Verification</a></li>
+<li><a href="#3-digital-signatures-and-certificates">3. Digital Signatures and Certificates</a></li>
+<li><a href="#4-blockchain-and-cryptocurrency">4. Blockchain and Cryptocurrency</a></li>
+<li><a href="#5-efficient-data-lookup-hash-tables">5. Efficient Data Lookup (Hash Tables)</a></li>
+<li><a href="#6-content-deduplication">6. Content Deduplication</a></li>
+<li><a href="#7-document-and-file-fingerprinting">7. Document and File Fingerprinting</a></li>
+<li><a href="#8-software-integrity-verification">8. Software Integrity Verification</a></li>
 </ul>
 </div>
         </nav>
@@ -97,36 +101,56 @@
         <div class="span8 article-content">
             
             
-<p>Hashing algorithms vary in complexity, security, and length of output. Here are some of the most widely used types:</p>
-<h6 id="md5-message-digest-algorithm-5">MD5 (Message Digest Algorithm 5)<a class="headerlink" href="#md5-message-digest-algorithm-5" title="Permanent link">¶</a></h6>
+<p>Now, let’s look at where and how hashing is used across various applications. It covers a wide range of applications across industries. Here’s how hashing enhances security, efficiency, and data integrity:</p>
+<h4 id="1-password-storage-and-authentication">1. <strong>Password Storage and Authentication</strong><a class="headerlink" href="#1-password-storage-and-authentication" title="Permanent link">¶</a></h4>
 <ul>
-<li>Produces a 128-bit hash.</li>
-<li>It’s fast but vulnerable to collisions, meaning two different inputs can produce the same hash. Due to these vulnerabilities, MD5 is generally not recommended for secure applications today.</li>
+<li><strong>Description</strong>: When users create passwords, the system stores a hash of the password instead of the actual password. During login, the entered password is hashed and compared with the stored hash.</li>
+<li><strong>Benefits</strong>: Even if the database is compromised, attackers can’t easily retrieve the original passwords, as they only have access to hashed values.</li>
 </ul>
-<h6 id="sha-1-secure-hash-algorithm-1">SHA-1 (Secure Hash Algorithm 1)<a class="headerlink" href="#sha-1-secure-hash-algorithm-1" title="Permanent link">¶</a></h6>
+<h4 id="2-data-integrity-verification">2. <strong>Data Integrity Verification</strong><a class="headerlink" href="#2-data-integrity-verification" title="Permanent link">¶</a></h4>
 <ul>
-<li>Produces a 160-bit hash.</li>
-<li>SHA-1 was widely used in the past but is now considered insecure for most applications due to susceptibility to collision attacks.</li>
+<li><strong>Description</strong>: Hashing verifies data integrity by comparing the original and current hash values. If the hashes match, the data remains unchanged.</li>
+<li><strong>Benefits</strong>: Essential in file transfers and storage to ensure that files aren’t corrupted or tampered with during transit or storage.</li>
 </ul>
-<h6 id="sha-2-secure-hash-algorithm-2">SHA-2 (Secure Hash Algorithm 2)<a class="headerlink" href="#sha-2-secure-hash-algorithm-2" title="Permanent link">¶</a></h6>
+<h4 id="3-digital-signatures-and-certificates">3. <strong>Digital Signatures and Certificates</strong><a class="headerlink" href="#3-digital-signatures-and-certificates" title="Permanent link">¶</a></h4>
 <ul>
-<li>A family of hash functions that includes SHA-256 (producing a 256-bit hash) and SHA-512 (producing a 512-bit hash).</li>
-<li>SHA-256 is a highly secure and widely used hashing algorithm, particularly in cryptocurrency and digital certificates.</li>
+<li><strong>Description</strong>: In digital signatures, the sender hashes a document and encrypts it with a private key. The recipient decrypts it with the sender’s public key and compares the hashes.</li>
+<li><strong>Benefits</strong>: Guarantees the authenticity and integrity of digital documents, allowing secure communication between parties.</li>
 </ul>
-<h6 id="sha-3-secure-hash-algorithm-3">SHA-3 (Secure Hash Algorithm 3)<a class="headerlink" href="#sha-3-secure-hash-algorithm-3" title="Permanent link">¶</a></h6>
+<h4 id="4-blockchain-and-cryptocurrency">4. <strong>Blockchain and Cryptocurrency</strong><a class="headerlink" href="#4-blockchain-and-cryptocurrency" title="Permanent link">¶</a></h4>
 <ul>
-<li>A newer standard designed to offer security even against advanced attacks. It’s computationally intensive but highly secure, often used in cryptographic applications that require maximum security.</li>
+<li><strong>Description</strong>: In blockchain, each block contains a hash of the previous block, creating a secure chain. Altering any block invalidates the chain, protecting data integrity.</li>
+<li><strong>Benefits</strong>: Ensures the authenticity of transactions and secures decentralized networks like Bitcoin and Ethereum.</li>
 </ul>
-<p>Each of these algorithms are designed with specific trade-offs in mind between security, performance, and output size.</p>
+<h4 id="5-efficient-data-lookup-hash-tables">5. <strong>Efficient Data Lookup (Hash Tables)</strong><a class="headerlink" href="#5-efficient-data-lookup-hash-tables" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Description</strong>: Hash tables use hashing to store and quickly retrieve data, mapping keys to specific memory addresses.</li>
+<li><strong>Benefits</strong>: Enables fast data retrieval in programming, with average constant-time complexity for operations.</li>
+</ul>
+<h4 id="6-content-deduplication">6. <strong>Content Deduplication</strong><a class="headerlink" href="#6-content-deduplication" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Description</strong>: File deduplication systems use hashing to detect and remove duplicate files, identifying identical content by matching hashes.</li>
+<li><strong>Benefits</strong>: Saves storage space by ensuring only unique files are stored, improving storage efficiency in backup and archival systems.</li>
+</ul>
+<h4 id="7-document-and-file-fingerprinting">7. <strong>Document and File Fingerprinting</strong><a class="headerlink" href="#7-document-and-file-fingerprinting" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Description</strong>: Hashing creates unique identifiers, or fingerprints, for documents and files, which are then used for verification.</li>
+<li><strong>Benefits</strong>: Allows quick identification of documents, helping to ensure authenticity and detect tampering in legal and forensic applications.</li>
+</ul>
+<h4 id="8-software-integrity-verification">8. <strong>Software Integrity Verification</strong><a class="headerlink" href="#8-software-integrity-verification" title="Permanent link">¶</a></h4>
+<ul>
+<li><strong>Description</strong>: Software packages often include hash values for users to verify the integrity of downloads.</li>
+<li><strong>Benefits</strong>: Prevents users from downloading corrupted or tampered software, ensuring safe software distribution.</li>
+</ul>
 
 
              
  
                 <p id="post-share-links">
     Like this post? Share on!
-      <a href="https://twitter.com/intent/tweet?text=Types%20of%20Hashing%20Algorithms&url=https%3A//Don-cloud.github.io/2024/11/06/hashing-types/&hashtags=encryption,cybersecurity" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
- ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//Don-cloud.github.io/2024/11/06/hashing-types/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
- ❄       <a href="mailto:?subject=Types%20of%20Hashing%20Algorithms&amp;body=https%3A//Don-cloud.github.io/2024/11/06/hashing-types/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
+      <a href="https://twitter.com/intent/tweet?text=Use%20cases&url=https%3A//Don-cloud.github.io/2024/11/10/hashing-usecases/&hashtags=encryption,cybersecurity" target="_blank" rel="nofollow noopener noreferrer" title="Share on Twitter">Twitter</a>
+ ❄       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//Don-cloud.github.io/2024/11/10/hashing-usecases/" target="_blank" rel="nofollow noopener noreferrer" title="Share on Facebook">Facebook</a>
+ ❄       <a href="mailto:?subject=Use%20cases&amp;body=https%3A//Don-cloud.github.io/2024/11/10/hashing-usecases/" target="_blank" rel="nofollow noopener noreferrer" title="Share via Email">Email</a>
 
             
             
@@ -141,27 +165,28 @@
             <aside>
             <nav>
             <ul class="articles-timeline">
-                <li class="previous-article">« <a href="https://Don-cloud.github.io/2024/11/03/hashing-intro/" title="Previous: Power of Hashing in modern secure communications">Power of Hashing in modern secure communications</a></li>
-                <li class="next-article"><a href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" title="Next: Use cases">Use cases</a> »</li>
+                <li class="previous-article">« <a href="https://Don-cloud.github.io/2024/11/06/hashing-types/" title="Previous: Types of Hashing Algorithms">Types of Hashing Algorithms</a></li>
             </ul>
             </nav>
             </aside>
         </div>
         </main>
         <section id="article-sidebar" class="span2">
+    <h4>Reading Time</h4>
+    <p>~2 min read</p>
             <h4>Published</h4>
-            <time itemprop="dateCreated" datetime="2024-11-06T18:40:00+01:00">Wed 06 November 2024</time>
+            <time itemprop="dateCreated" datetime="2024-11-10T10:00:00+01:00">Sun 10 November 2024</time>
 
         <h4>Hashing Series</h4>
     <ul class="multi-parts-list">
             <li >
             <a href="https://Don-cloud.github.io/2024/11/03/hashing-intro/" title="Power of Hashing in modern secure communications">Part 1: Power of Hashing in modern secure communications</a>
             </li>
-            <li  class="active-part">
-            Part 2: Types of Hashing Algorithms
-            </li>
             <li >
-            <a href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" title="Use cases">Part 3: Use cases</a>
+            <a href="https://Don-cloud.github.io/2024/11/06/hashing-types/" title="Types of Hashing Algorithms">Part 2: Types of Hashing Algorithms</a>
+            </li>
+            <li  class="active-part">
+            Part 3: Use cases
             </li>
     </ul>
             <h4>Category</h4>

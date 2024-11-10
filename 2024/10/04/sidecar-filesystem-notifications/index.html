@@ -145,7 +145,8 @@
 <p>Separation of Concerns: By offloading file monitoring to a sidecar, the main application remains focused on its primary logic, while the sidecar handles ancillary tasks like log monitoring or config watching.</p>
 <p>Real-Time Response: Inotify allows your system to react to file system events instantly, which can be crucial for real-time logging, dynamic configurations, or event-driven workflows.</p>
 <h2 id="limitations-to-consider">Limitations to Consider<a class="headerlink" href="#limitations-to-consider" title="Permanent link">¶</a></h2>
-<p>The Linux kernel has a limit on the number of inotify watches that can be created (controlled by the <code>fs.inotify.max_user_watches</code> parameter). This limit might need to be increased for systems that need to monitor many files or directories.</p>
+<p>The Linux kernel has a limit on the number of inotify watches that can be created (controlled by the <code>fs.inotify.max_user_watches</code> parameter). This limit might need to be increased for systems that need to monitor many files or directories.
+This article assumes that <code>Persistent Volume Claims</code> (PVC) have already been configured in your Kubernetes cluster and that a filesystem is attached for storing the files. This approach is most suitable for handling reasonable file sizes. For larger files, you may want to explore the <a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check">claim-check</a> pattern as an alternative approach.</p>
 
 
              

@@ -1,5 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/all.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2024-11-06T18:40:00+01:00</updated><entry><title>Types of Hashing Algorithms</title><link href="https://Don-cloud.github.io/2024/11/06/hashing-types/" rel="alternate"></link><published>2024-11-06T18:40:00+01:00</published><updated>2024-11-06T18:40:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-06:/2024/11/06/hashing-types/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/all.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2024-11-10T10:00:00+01:00</updated><entry><title>Use cases</title><link href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" rel="alternate"></link><published>2024-11-10T10:00:00+01:00</published><updated>2024-11-10T10:00:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-10:/2024/11/10/hashing-usecases/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;Now, let’s look at where and how hashing is used across various applications. It covers a wide range of applications across industries. Here’s how hashing enhances security, efficiency, and data integrity:&lt;/p&gt;
+&lt;h4 id="1-password-storage-and-authentication"&gt;1. &lt;strong&gt;Password Storage and Authentication&lt;/strong&gt;&lt;a class="headerlink" href="#1-password-storage-and-authentication" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: When users create passwords, the system stores a hash of the password instead of the actual password. During login, the entered password is hashed and compared with the stored hash.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Even if the database is compromised, attackers can’t easily retrieve the original passwords, as they only have access to hashed values.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="2-data-integrity-verification"&gt;2. &lt;strong&gt;Data Integrity Verification&lt;/strong&gt;&lt;a class="headerlink" href="#2-data-integrity-verification" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Hashing verifies data integrity by comparing the original and current hash values. If the hashes match, the data remains unchanged.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Essential in file transfers and storage to ensure that files aren’t corrupted or tampered with during transit or storage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="3-digital-signatures-and-certificates"&gt;3. &lt;strong&gt;Digital Signatures and Certificates&lt;/strong&gt;&lt;a class="headerlink" href="#3-digital-signatures-and-certificates" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: In digital signatures, the sender hashes a document and encrypts it with a private key. The recipient decrypts it with the sender’s public key and compares the hashes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Guarantees the authenticity and integrity of digital documents, allowing secure communication between parties.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="4-blockchain-and-cryptocurrency"&gt;4. &lt;strong&gt;Blockchain and Cryptocurrency&lt;/strong&gt;&lt;a class="headerlink" href="#4-blockchain-and-cryptocurrency" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: In blockchain, each block contains a hash of the previous block, creating a secure chain. Altering any block invalidates the chain, protecting data integrity.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Ensures the authenticity of transactions and secures decentralized networks like Bitcoin and Ethereum.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="5-efficient-data-lookup-hash-tables"&gt;5. &lt;strong&gt;Efficient Data Lookup (Hash Tables)&lt;/strong&gt;&lt;a class="headerlink" href="#5-efficient-data-lookup-hash-tables" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Hash tables use hashing to store and quickly retrieve data, mapping keys to specific memory addresses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Enables fast data retrieval in programming, with average constant-time complexity for operations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="6-content-deduplication"&gt;6. &lt;strong&gt;Content Deduplication&lt;/strong&gt;&lt;a class="headerlink" href="#6-content-deduplication" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: File deduplication systems use hashing to detect and remove duplicate files, identifying identical content by matching hashes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Saves storage space by ensuring only unique files are stored, improving storage efficiency in backup and archival systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="7-document-and-file-fingerprinting"&gt;7. &lt;strong&gt;Document and File Fingerprinting&lt;/strong&gt;&lt;a class="headerlink" href="#7-document-and-file-fingerprinting" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Hashing creates unique identifiers, or fingerprints, for documents and files, which are then used for verification.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Allows quick identification of documents, helping to ensure authenticity and detect tampering in legal and forensic applications.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id="8-software-integrity-verification"&gt;8. &lt;strong&gt;Software Integrity Verification&lt;/strong&gt;&lt;a class="headerlink" href="#8-software-integrity-verification" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Description&lt;/strong&gt;: Software packages often include hash values for users to verify the integrity of downloads.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Benefits&lt;/strong&gt;: Prevents users from downloading corrupted or tampered software, ensuring safe software distribution.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Cloud Technologies"></category><category term="encryption"></category><category term="cybersecurity"></category></entry><entry><title>Types of Hashing Algorithms</title><link href="https://Don-cloud.github.io/2024/11/06/hashing-types/" rel="alternate"></link><published>2024-11-06T18:40:00+01:00</published><updated>2024-11-06T18:40:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-06:/2024/11/06/hashing-types/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;Hashing algorithms vary in complexity, security, and length of output. Here are some of the most widely used types:&lt;/p&gt;
 &lt;h6 id="md5-message-digest-algorithm-5"&gt;MD5 (Message Digest Algorithm 5)&lt;a class="headerlink" href="#md5-message-digest-algorithm-5" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h6&gt;
 &lt;ul&gt;
@@ -95,7 +136,8 @@
 &lt;p&gt;Separation of Concerns: By offloading file monitoring to a sidecar, the main application remains focused on its primary logic, while the sidecar handles ancillary tasks like log monitoring or config watching.&lt;/p&gt;
 &lt;p&gt;Real-Time Response: Inotify allows your system to react to file system events instantly, which can be crucial for real-time logging, dynamic configurations, or event-driven workflows.&lt;/p&gt;
 &lt;h2 id="limitations-to-consider"&gt;Limitations to Consider&lt;a class="headerlink" href="#limitations-to-consider" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The Linux kernel has a limit on the number of inotify watches that can be created (controlled by the &lt;code&gt;fs.inotify.max_user_watches&lt;/code&gt; parameter). This limit might need to be increased for systems that need to monitor many files or directories.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="kubernetes"></category></entry><entry><title>Boosting Kubernetes Filesystem Workflows</title><link href="https://Don-cloud.github.io/2024/10/03/kubernetes-filesystem-notifications/" rel="alternate"></link><published>2024-10-03T10:20:00+02:00</published><updated>2024-10-03T19:30:00+02:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-10-03:/2024/10/03/kubernetes-filesystem-notifications/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;The Linux kernel has a limit on the number of inotify watches that can be created (controlled by the &lt;code&gt;fs.inotify.max_user_watches&lt;/code&gt; parameter). This limit might need to be increased for systems that need to monitor many files or directories.
+This article assumes that &lt;code&gt;Persistent Volume Claims&lt;/code&gt; (PVC) have already been configured in your Kubernetes cluster and that a filesystem is attached for storing the files. This approach is most suitable for handling reasonable file sizes. For larger files, you may want to explore the &lt;a href="https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check"&gt;claim-check&lt;/a&gt; pattern as an alternative approach.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="kubernetes"></category></entry><entry><title>Boosting Kubernetes Filesystem Workflows</title><link href="https://Don-cloud.github.io/2024/10/03/kubernetes-filesystem-notifications/" rel="alternate"></link><published>2024-10-03T10:20:00+02:00</published><updated>2024-10-03T19:30:00+02:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-10-03:/2024/10/03/kubernetes-filesystem-notifications/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
 &lt;h2 id="introduction"&gt;Introduction&lt;a class="headerlink" href="#introduction" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Linux, monitoring file events is essential for various applications like real-time logging, configuration updates, or event-driven workflows. &lt;strong&gt;Inotify&lt;/strong&gt; is a powerful tool provided by the Linux kernel to watch files and directories for changes. In this article, we’ll explore how inotify works and how it can be integrated as a &lt;strong&gt;sidecar&lt;/strong&gt; in Kubernetes to improve the architecture of cloud-native applications.&lt;/p&gt;
 &lt;h2 id="what-is-inotify"&gt;What is Inotify?&lt;a class="headerlink" href="#what-is-inotify" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
