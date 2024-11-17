@@ -88,6 +88,9 @@
 &lt;h2 id="helpful-tools"&gt;Helpful Tools&lt;a class="headerlink" href="#helpful-tools" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://azurespeedtest.azurewebsites.net/"&gt;Azure Speed Test&lt;/a&gt; Tool to provide measurable azure regions latency information from your location &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.geocerts.com/ssl-checker"&gt;Check SSL Certificates &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://artifacthub.io/"&gt;Find, install and publish Cloud Native packages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.geocerts.com/ssl-checker" target="_blank"&gt;SSL installation checker&lt;a&gt;&lt;/a&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><category term="Inspiration"></category><category term="books"></category><category term="leadership"></category></entry><entry><title>Kubernetes Filesystem Workflows with Sidecars</title><link href="https://Don-cloud.github.io/2024/10/04/sidecar-filesystem-notifications/" rel="alternate"></link><published>2024-10-04T10:20:00+02:00</published><updated>2024-10-05T19:30:00+02:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-10-04:/2024/10/04/sidecar-filesystem-notifications/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
 &lt;h2 id="inotify-in-kubernetes-the-sidecar-pattern"&gt;Inotify in Kubernetes: The Sidecar Pattern&lt;a class="headerlink" href="#inotify-in-kubernetes-the-sidecar-pattern" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Kubernetes, a sidecar container is a container that runs alongside your main application in the same Pod, adding extra functionalities like logging, monitoring, or proxying. Using inotify as a sidecar can bring real-time file monitoring to your Kubernetes setup.&lt;/p&gt;
