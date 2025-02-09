@@ -3,6 +3,11 @@ html_selector = "main"
 base_directory = "/home/don/repos/projects/blogoutput"
 
 [[input.files]]
+path = "2025/02/08/example-file-event/index.html"
+url = "/2025/02/08/example-file-event/"
+title = "Example:Real-time monitoring of filesystem events"
+
+[[input.files]]
 path = "2024/11/10/hashing-usecases/index.html"
 url = "/2024/11/10/hashing-usecases/"
 title = "Use cases"
@@ -25,7 +30,7 @@ title = "Tech Wisdom: Books & Resources That Inspire and Elevate Our Tech Journe
 [[input.files]]
 path = "2024/10/04/sidecar-filesystem-notifications/index.html"
 url = "/2024/10/04/sidecar-filesystem-notifications/"
-title = "Kubernetes Filesystem Workflows with Sidecars"
+title = "Supercharge Your Kubernetes Workflows: Real-Time File Monitoring with Inotify Sidecars!"
 
 [[input.files]]
 path = "2024/10/03/kubernetes-filesystem-notifications/index.html"
