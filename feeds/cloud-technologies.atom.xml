@@ -1,5 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage - Cloud Technologies</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/cloud-technologies.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2024-11-10T10:00:00+01:00</updated><entry><title>Use cases</title><link href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" rel="alternate"></link><published>2024-11-10T10:00:00+01:00</published><updated>2024-11-10T10:00:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-10:/2024/11/10/hashing-usecases/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
+<feed xmlns="http://www.w3.org/2005/Atom"><title>The Digital Sage - Cloud Technologies</title><link href="https://Don-cloud.github.io/" rel="alternate"></link><link href="https://Don-cloud.github.io/feeds/cloud-technologies.atom.xml" rel="self"></link><id>https://Don-cloud.github.io/</id><updated>2025-02-08T10:30:00+01:00</updated><entry><title>Example:Real-time monitoring of filesystem events</title><link href="https://Don-cloud.github.io/2025/02/08/example-file-event/" rel="alternate"></link><published>2025-02-08T10:20:00+01:00</published><updated>2025-02-08T10:30:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2025-02-08:/2025/02/08/example-file-event/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="overview"&gt;Overview&lt;a class="headerlink" href="#overview" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This guide demonstrates how to set up real-time monitoring on a Linux directory to detect filesystem events. When an event occurs, the system logs the corresponding file names in a log file located in the &lt;code&gt;/tmp&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;The source files for this example are available on &lt;a href="https://github.com/Don-cloud/folder_monitor" target="_blank"&gt;GitHub&lt;a&gt;&lt;/a&gt;.&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="files"&gt;Files&lt;a class="headerlink" href="#files" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;Dockerfile&lt;/code&gt;&lt;/strong&gt;: Defines the Docker image build process.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;monitor.sh&lt;/code&gt;&lt;/strong&gt;: Monitors the &lt;code&gt;/incoming_folder&lt;/code&gt; directory for filesystem events.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;code&gt;handler.sh&lt;/code&gt;&lt;/strong&gt;: Executed by &lt;code&gt;monitor.sh&lt;/code&gt; when a filesystem event is detected, logging the affected file name.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="usage"&gt;Usage&lt;a class="headerlink" href="#usage" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To set up the monitoring system, follow these steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Clone the Git Repository&lt;/strong&gt;, then build and run the Docker container:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker&lt;span class="w"&gt; &lt;/span&gt;build&lt;span class="w"&gt; &lt;/span&gt;-t&lt;span class="w"&gt; &lt;/span&gt;file-monitor:v1&lt;span class="w"&gt; &lt;/span&gt;.
+docker&lt;span class="w"&gt; &lt;/span&gt;run&lt;span class="w"&gt; &lt;/span&gt;file-monitor:v1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Access the Running Container&lt;/strong&gt;:
+   Open a new terminal window and execute:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;docker&lt;span class="w"&gt; &lt;/span&gt;ps&lt;span class="w"&gt;  &lt;/span&gt;&lt;span class="c1"&gt;# Lists running containers&lt;/span&gt;
+docker&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nb"&gt;exec&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-it&lt;span class="w"&gt; &lt;/span&gt;&amp;lt;container-id&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;/bin/sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Trigger Filesystem Events&lt;/strong&gt;:
+   Navigate to the monitored folder and create test files:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;cd&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;/incoming_folder
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Hello "&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;hello.txt
+&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"Hello 2"&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&amp;gt;&lt;span class="w"&gt; &lt;/span&gt;hello2.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;View Logged Events&lt;/strong&gt;:
+   Monitor the log file to observe the captured filesystem events:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;tail&lt;span class="w"&gt; &lt;/span&gt;-f&lt;span class="w"&gt; &lt;/span&gt;/tmp/event_log.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Example output:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;A&lt;span class="w"&gt; &lt;/span&gt;file&lt;span class="w"&gt; &lt;/span&gt;create&lt;span class="w"&gt; &lt;/span&gt;event&lt;span class="w"&gt; &lt;/span&gt;was&lt;span class="w"&gt; &lt;/span&gt;triggered&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;hello.txt&lt;span class="o"&gt;}&lt;/span&gt;
+A&lt;span class="w"&gt; &lt;/span&gt;file&lt;span class="w"&gt; &lt;/span&gt;create&lt;span class="w"&gt; &lt;/span&gt;event&lt;span class="w"&gt; &lt;/span&gt;was&lt;span class="w"&gt; &lt;/span&gt;triggered&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="k"&gt;for&lt;/span&gt;:&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="o"&gt;{&lt;/span&gt;hello2.txt&lt;span class="o"&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This setup ensures real-time monitoring of directory changes, making it useful for automated processing workflows.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="kubernetes"></category></entry><entry><title>Use cases</title><link href="https://Don-cloud.github.io/2024/11/10/hashing-usecases/" rel="alternate"></link><published>2024-11-10T10:00:00+01:00</published><updated>2024-11-10T10:00:00+01:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-11-10:/2024/11/10/hashing-usecases/</id><summary type="html">&lt;p&gt;Role of Hashing Introduction&lt;/p&gt;</summary><content type="html">
 &lt;p&gt;Now, let’s look at where and how hashing is used across various applications. It covers a wide range of applications across industries. Here’s how hashing enhances security, efficiency, and data integrity:&lt;/p&gt;
 &lt;h4 id="1-password-storage-and-authentication"&gt;1. &lt;strong&gt;Password Storage and Authentication&lt;/strong&gt;&lt;a class="headerlink" href="#1-password-storage-and-authentication" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
@@ -75,7 +118,9 @@
 &lt;p&gt;For example, to hash a password like &lt;code&gt;imaginary-password&lt;/code&gt; with the SHA-256 hashing algorithm, you can use the following command in Unix-based systems:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="nb"&gt;echo&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;-n&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="s2"&gt;"imaginary-password"&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;|&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;shasum&lt;span class="w"&gt; &lt;/span&gt;-a&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="m"&gt;256&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This command produces a 256-bit (32-byte) hash value, which is the “fingerprint” of your input text.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="encryption"></category><category term="cybersecurity"></category></entry><entry><title>Kubernetes Filesystem Workflows with Sidecars</title><link href="https://Don-cloud.github.io/2024/10/04/sidecar-filesystem-notifications/" rel="alternate"></link><published>2024-10-04T10:20:00+02:00</published><updated>2024-10-05T19:30:00+02:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-10-04:/2024/10/04/sidecar-filesystem-notifications/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
+&lt;p&gt;This command produces a 256-bit (32-byte) hash value, which is the “fingerprint” of your input text.&lt;/p&gt;</content><category term="Cloud Technologies"></category><category term="encryption"></category><category term="cybersecurity"></category></entry><entry><title>Supercharge Your Kubernetes Workflows: Real-Time File Monitoring with Inotify Sidecars!</title><link href="https://Don-cloud.github.io/2024/10/04/sidecar-filesystem-notifications/" rel="alternate"></link><published>2024-10-04T10:20:00+02:00</published><updated>2024-10-05T19:30:00+02:00</updated><author><name>Sajal Sachdev</name></author><id>tag:don-cloud.github.io,2024-10-04:/2024/10/04/sidecar-filesystem-notifications/</id><summary type="html">&lt;p&gt;Linux filesystem notifications&lt;/p&gt;</summary><content type="html">
+&lt;h2 id="overview"&gt;Overview&lt;a class="headerlink" href="#overview" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Unlock the power of inotify in Kubernetes using the sidecar pattern! Learn how to implement real-time log streaming, dynamic config reloads, and event-driven automation by monitoring filesystem changes instantly. This guide walks you through a hands-on Kubernetes deployment example to streamline observability and automation in your clusters. &lt;/p&gt;
 &lt;h2 id="inotify-in-kubernetes-the-sidecar-pattern"&gt;Inotify in Kubernetes: The Sidecar Pattern&lt;a class="headerlink" href="#inotify-in-kubernetes-the-sidecar-pattern" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;In Kubernetes, a sidecar container is a container that runs alongside your main application in the same Pod, adding extra functionalities like logging, monitoring, or proxying. Using inotify as a sidecar can bring real-time file monitoring to your Kubernetes setup.&lt;/p&gt;
 &lt;h2 id="why-use-inotify-as-a-sidecar"&gt;Why Use Inotify as a Sidecar?&lt;a class="headerlink" href="#why-use-inotify-as-a-sidecar" title="Permanent link"&gt;¶&lt;/a&gt;&lt;/h2&gt;
